@@ -3,11 +3,11 @@
   padding: 0
 }
 
-.header {
+.header-form {
     background: linear-gradient(to top right, orange, yellow);
     min-height: 340px;
 }
-.header::after {
+.header-form::after {
   content:'';
   position:relative;
   border-style: solid;
@@ -17,20 +17,19 @@
   width: 0;
   display: block;
   margin: 0 auto;
-  
+
 }
 
-.header img {
+.header-form img {
     margin: 0 auto;
     display: block;
     padding: 20px;
-	width: 200px;
-	background:#fff;
+  	width: 200px;
+  	background:#fff;
 }
 
 .label h3 {
-position:relative;
-
+    position:relative;
     text-align: center;
     color: #fff;
     font-size: 30px;
@@ -56,12 +55,22 @@ position:relative;
     box-shadow: rgba(0, 0, 0, 0.075) 0px 0px 0px inset;
     background-color: transparent;
 }
+.form-content .form-group i.fa-user {
+    position: absolute;
+    top: 95px;
+    right: 40px;
+}
 
-.form-group {
+.form-content .form-group i.fa-eye {
+    position: absolute;
+    bottom: 70px;
+    right: 40px;
+}
+.form-content .form-group {
   margin-bottom: 20px;
 }
 
-button.btn {
+.form-content button.btn {
     background: linear-gradient(to  right, orange, yellow);
     position: relative;
     color: #fff;
@@ -71,29 +80,166 @@ button.btn {
     border: 1px solid #FFEB3B;
 }
 
-button.btn:hover {
+.form-content button.btn:hover {
     border: 1px solid orange;
 }
 
-
 .form-content input.form-control:focus {
     border-bottom: 1px solid #2196F3;
-    
+
 }
 
-button.btn:focus {
+.form-content button.btn:focus {
     background: linear-gradient(to top right, orange, yellow);
 }
 
-
-.form-group i.fa-user {
-    position: absolute;
-    top: 95px;
-    right: 40px;
+/*-----------HOME---------------*/
+.navbar-custom {
+    background: yellow;
+    border-radius: 0;
+    border-color: transparent;
+    margin-bottom: 0;
 }
 
-.form-group i.fa-eye {
+.navbar-custom .navbar-nav li a {
+  color: #000;
+  border-radius: 4px;
+  margin: 10px 15px;
+  padding: 5px;
+}
+.navbar-custom .navbar-nav li a:hover {
+  background:  #fff;
+}
+.navbar-brand img {
+    border: 1px solid black;
+    background: #fff; 
+    margin: 0 auto;
+    width: 80px;
+    padding: 10px 15px 0px;
+    border-top: 0;
+}
+
+.navbar-brand {
+    padding: 0;
+    width: 100%;
     position: absolute;
-    bottom: 70px;
-    right: 40px;
+    border-bottom: 1px solid #000;
+}
+
+.navbar-default .navbar-collapse {
+  border: 0;
+}
+.navbar-toggle {
+    z-index: 1;
+}
+
+.navbar-brand::after {
+ content:'';
+ position:relative;
+ top: -1px;
+ border-style:solid;
+ border-width: 26px 40px 0;
+ border-color: #fff transparent;
+ width:0;
+ display:block;
+ margin:0 auto;
+}
+.navbar-brand::before {
+ content:'';
+ position:absolute;
+ left:50%;
+ top: 141%;
+ border-style:solid;
+ border-width: 26px 40px 0;
+ border-color: #000 transparent;
+ width:0;
+ transform:translate(-50%, -50%);
+}
+
+/*------------FORM CARI------------ */
+.box {
+  margin: 0 150px;
+}
+.frame-cari {
+  margin-top: 45px;
+}
+.form-group label {
+  margin-right: 20px;
+}
+.select-custom {
+  width: 80%;
+  display: inline-block;
+}
+.btn-warning {
+  background: #000;
+  border-color: #000;
+}
+
+.container-fluid .jumbotron-home {
+  border-radius: 0;
+  margin: 25px 0 30px;
+  padding: 50px 15px;
+  background-color: yellow;
+}
+
+
+.frame-pilih-kelas {
+  margin-top: 20px;
+}
+.frame-pilih-kelas .list-kelas {
+  position: relative;
+  background: linear-gradient(to top right, #ffc700, yellow);
+  width: 80%;
+  height: 240px;
+  box-shadow: 0 0 0 10px #fff, 0 0 15px 5px #000;
+  margin: 0 auto;
+  transition: .2s ease-out;
+}
+.frame-pilih-kelas .list-kelas:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0 10px #fff, 0 0 25px 5px #000;
+}
+.frame-pilih-kelas .list-kelas h3 {
+  position: absolute;
+  margin: 0;
+  left: -6px;
+  bottom: -38px;
+  font-size: 180px;
+  color: #fff;
+}
+/*--------------List Jurusan---------------------*/
+.jumbotron-list {
+  background: yellow;
+  margin-bottom: 50px;
+  padding: 50px 15px;
+}
+.list-jurusan {
+  font-weight: bold;
+}
+.list-jurusan .list-group-item a {
+  text-decoration: none;
+  color: #000;
+}
+.list-jurusan .list-group-item a:hover {
+  background: yellow;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+/*--------------List Nama Siswa---------------------*/
+.table-siswa {
+  padding: 0;
+}
+.table-siswa #checkbox {
+  text-align: right;
+}
+.btn-kirim {
+  border-bottom: 3px solid #ccc;
+  position: absolute;
+  right: 0;
+  margin-bottom: 30px;
+}
+.btn-kirim:hover {
+  background: yellow;
+  border-bottom: 3px solid orange;
 }
