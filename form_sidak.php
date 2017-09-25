@@ -27,7 +27,7 @@
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-left">
-          <li><a href="#h">Home</a></li>
+          <li><a href="home.php">Home</a></li>
           <li><a href="#r">Riwayat</a></li>
           <li><a href="#b">Blacklist</a></li>
         </ul>
@@ -43,6 +43,38 @@
           <h2 class="text-center">Kelas XII</h2>
       </div>
     </div>
+
+
+    <div class="container-fluid">
+      <div class="box frame-cari2">
+        <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="cari">Sidak</label>
+            <select class="form-control select-custom" id="cari">
+              <option>Rambut</option>
+              <option>Atribut</option>
+              <option>Pakaian</option>
+              <option>Pakaian</option>
+              <option>Pakaian</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <div class="input-group">
+            <input type="text" class="form-control" name="cari" placeholder="Cari Nama...">
+            <span class="input-group-btn">
+              <button class="btn btn-warning" type="button">
+                <span class="glyphicon glyphicon-search"></span>
+              </button>
+            </span>
+            </div>
+          </div>
+
+        </div> <!--ROW-->
+      </div> <!--BOX-->
+    </div> <!--container-fluid-->
 
     <div class="container-fluid">
       <div class="box">

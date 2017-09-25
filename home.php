@@ -14,8 +14,33 @@
   <!-- script -->
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript">
+/*
+  var minimumShowLoadingTimeReached = false;
+  setTimeout(function() {minimumShowLoadingTimeReached = true;}, 3000);
+
+  function preloader() {
+    if (minimumShowLoadingTimeReached) {
+        showContent();
+    } else {
+        setTimeout(function() {
+          preloader();
+        }, 1250);
+    }
+  }
+
+  function showContent(){
+      document.getElementById("loading").style.display = "none";
+      document.getElementById("content").style.display = "block";
+  }
+  window.onload = preloader;
+  */
+  </script>
   </head>
-  <body>
+  <body id="content">
+    <!--div id="loading">
+      <img src="img/esidak.gif" alt="">
+    </div-->
     <nav class="navbar navbar-default navbar-custom">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -76,20 +101,25 @@
       <div class="box">
         <div class="row frame-pilih-kelas">
         <div class="col-md-4">
+          <a href="list_kelas.php">
           <div class="list-kelas">
             <h3>X</h3>
           </div>
         </div>
+        </a>
         <div class="col-md-4">
+          <a href="list_kelas.php">
           <div class="list-kelas">
             <h3>XI</h3>
           </div>
         </div>
         <div class="col-md-4">
+          <a href="list_kelas.php">
           <div class="list-kelas">
             <h3>XII</h3>
           </div>
         </div>
+        </a>
       </div>
       </div>
     </div>

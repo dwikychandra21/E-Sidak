@@ -60,7 +60,7 @@
             <li class="list-group-item"><a href="#h">Teknik Kendaraan Ringan</a></li>
             <li class="list-group-item"><a href="#i">Teknik Kendaraan Ringan</a></li>
             <li class="list-group-item"><a href="#j">Teknik Komputer dan Jaringan</a></li>
-            <li class="list-group-item"><a href="#k">Rekayasa Perangkat Lunak</a></li>
+            <li class="list-group-item"><a href="form_sidak.php">Rekayasa Perangkat Lunak</a></li>
             <li class="list-group-item"><a href="#l">Multimedia</a></li>
           </ul>
         </div>
