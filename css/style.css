@@ -238,14 +238,16 @@
   text-align: right;
 }
 .btn-kirim {
-  border-bottom: 3px solid #ccc;
+  box-shadow: 0px 10px 25px #ccc;
+  width: 100px;
+  background: yellow;
+  border-radius: 0;
   position: absolute;
   right: 0;
   margin-bottom: 30px;
+  color: #000;
 }
 .btn-kirim:hover {
-  background: yellow;
-  border-bottom: 3px solid orange;
 }
 div#loading {
     background: #fff;
