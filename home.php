@@ -14,33 +14,9 @@
   <!-- script -->
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
-  <script type="text/javascript">
-/*
-  var minimumShowLoadingTimeReached = false;
-  setTimeout(function() {minimumShowLoadingTimeReached = true;}, 3000);
 
-  function preloader() {
-    if (minimumShowLoadingTimeReached) {
-        showContent();
-    } else {
-        setTimeout(function() {
-          preloader();
-        }, 1250);
-    }
-  }
-
-  function showContent(){
-      document.getElementById("loading").style.display = "none";
-      document.getElementById("content").style.display = "block";
-  }
-  window.onload = preloader;
-  */
-  </script>
   </head>
-  <body id="content">
-    <!--div id="loading">
-      <img src="img/esidak.gif" alt="">
-    </div-->
+  <body id="home">
     <nav class="navbar navbar-default navbar-custom">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -50,79 +26,23 @@
         </button>
         <a class="navbar-brand" href="index.php"><img src="img/esidak2.png" alt=""></a>
       </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-left">
-          <li><a href="#h">Home</a></li>
-          <li><a href="#r">Riwayat</a></li>
-          <li><a href="#b">Blacklist</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#u">Hy, Budi</a></li>
-          <li><a href="#k">Logout &nbsp;<i class="fa fa-sign-out"></i></a></li>
-        </ul>
-      </div>
     </nav>
-
     <div class="container-fluid">
-      <div class="box frame-cari">
-        <div class="row">
-        <div class="col-md-4">
-          <div class="form-group">
-            <label for="cari">Cari</label>
-            <select class="form-control select-custom" id="cari">
-              <option>NIS</option>
-              <option>NAMA</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="col-md-8">
-          <div class="input-group">
-            <input type="text" class="form-control" name="cari">
-            <span class="input-group-btn">
-              <button class="btn btn-warning" type="button">
-                <span class="glyphicon glyphicon-search"></span>
-              </button>
-            </span>
-            </div>
-          </div>
-
-      </div> <!--ROW-->
-    </div> <!--BOX-->
-    </div> <!--container-fluid-->
-
-    <div class="container-fluid">
-        <div class="jumbotron-home">
-          <h2 class="text-center">Kelas yang ingin disidak ?</h2>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="box">
-        <div class="row frame-pilih-kelas">
-        <div class="col-md-4">
-          <a href="list_kelas.php">
-          <div class="list-kelas">
-            <h3>X</h3>
-          </div>
+      <div class="col-md-12 col-sm-12 col-xs-12 pilih-halaman">
+        <a href="sistem_info_siswa.php">
+        <div class="text text1">
+          <h2>Halaman Informasi Siswa</h2>
         </div>
         </a>
-        <div class="col-md-4">
-          <a href="list_kelas.php">
-          <div class="list-kelas">
-            <h3>XI</h3>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <a href="list_kelas.php">
-          <div class="list-kelas">
-            <h3>XII</h3>
-          </div>
+
+        <a href="halaman_sidak.php">
+        <div class="text text2">
+          <h2>Halaman Sidak</h2>
         </div>
         </a>
       </div>
-      </div>
     </div>
+
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
   </body>
 </html>

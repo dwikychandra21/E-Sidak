@@ -32,7 +32,7 @@
           <li><a href="#b">Blacklist</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#u">Hy, Guru</a></li>
+          <li><a href="#u">Hy, Budi</a></li>
           <li><a href="#k">Logout &nbsp;<i class="fa fa-sign-out"></i></a></li>
         </ul>
       </div>
@@ -40,7 +40,7 @@
 
     <div class="container-fluid">
         <div class="jumbotron-list">
-          <h2 class="text-center">Kelas XII</h2>
+          <h2 class="text-center">SISTEM INFORMASI SISWA</h2>
       </div>
     </div>
 
@@ -50,9 +50,9 @@
         <div class="row">
         <div class="col-md-4">
           <div class="form-group">
-            <label for="cari">Sidak</label>
+            <label for="cari">Kelas</label>
             <select class="form-control select-custom" id="cari">
-              <option>Rambut</option>
+              <option>Pilih...</option>
               <option>Atribut</option>
               <option>Pakaian</option>
               <option>Pakaian</option>
@@ -82,148 +82,99 @@
         <div class="col-md-12 col-sm-12 table-siswa">
           <label><h3>Rekayasa Perangkat Lunak</h3></label>
           <table class="table table-striped ">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>NIS</th>
+                <th>Nama</th>
+                <th>Poin</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
             <tbody>
               <tr>
                 <td>1</td>
                 <td>24938</td>
                 <td>Dwiky Chandra Hidayat</td>
-                <td id="checkbox">
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox" value="">
-                      <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                    </label>
-                  </div>
-              </td>
+                <td>100</td>
+                <td id="checkbox"><input type="checkbox" value=""></td>
               </tr>
 
               <tr>
                 <td>2</td>
                 <td>24938</td>
                 <td>Dwiky Chandra Hidayat</td>
-                <td id="checkbox">
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox" value="">
-                      <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                    </label>
-                  </div>
-              </td>
+                <td>80</td>
+                <td id="checkbox"><input type="checkbox" value=""></td>
               </tr>
 
               <tr>
                 <td>3</td>
                 <td>24938</td>
                 <td>Dwiky Chandra Hidayat</td>
-                <td id="checkbox">
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox" value="">
-                      <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                    </label>
-                  </div>
-              </td>
+                <td>80</td>
+                <td id="checkbox"><input type="checkbox" value=""></td>
               </tr>
 
               <tr>
                 <td>4</td>
                 <td>24938</td>
                 <td>Dwiky Chandra Hidayat</td>
-                <td id="checkbox">
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox" value="">
-                      <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                    </label>
-                  </div>
-              </td>
+                <td>80</td>
+                <td id="checkbox"><input type="checkbox" value=""></td>
               </tr>
 
               <tr>
                 <td>5</td>
                 <td>24938</td>
                 <td>Dwiky Chandra Hidayat</td>
-                <td id="checkbox">
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox" value="">
-                      <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                    </label>
-                  </div>
-              </td>
+                <td>80</td>
+                <td id="checkbox"><input type="checkbox" value=""></td>
               </tr>
 
               <tr>
                 <td>6</td>
                 <td>24938</td>
                 <td>Dwiky Chandra Hidayat</td>
-                <td id="checkbox">
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox" value="">
-                      <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                    </label>
-                  </div>
-              </td>
+                <td>80</td>
+                <td id="checkbox"><input type="checkbox" value=""></td>
               </tr>
 
               <tr>
                 <td>7</td>
                 <td>24938</td>
                 <td>Dwiky Chandra Hidayat</td>
-                <td id="checkbox">
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox" value="">
-                      <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                    </label>
-                  </div>
-              </td>
+                <td>80</td>
+                <td id="checkbox"><input type="checkbox" value=""></td>
               </tr>
 
               <tr>
                 <td>8</td>
                 <td>24938</td>
                 <td>Dwiky Chandra Hidayat</td>
-                <td id="checkbox">
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox" value="">
-                      <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                    </label>
-                  </div>
-              </td>
+                <td>80</td>
+                <td id="checkbox"><input type="checkbox" value=""></td>
               </tr>
 
-              <tr>
+              <tr id="blacklist">
                 <td>9</td>
                 <td>24938</td>
                 <td>Dwiky Chandra Hidayat</td>
-                <td id="checkbox">
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox" value="">
-                      <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                    </label>
-                  </div>
-              </td>
+                <td>80</td>
+                <td id="checkbox"><input type="checkbox" value=""></td>
               </tr>
 
               <tr>
                 <td>10</td>
                 <td>24938</td>
                 <td>Dwiky Chandra Hidayat</td>
-                <td id="checkbox">
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox" value="">
-                      <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                    </label>
-                  </div>
-              </td>
+                <td>80</td>
+                <td id="checkbox"><input type="checkbox" value=""></td>
+
               </tr>
             </tbody>
           </table>
+          <button class="btn btn-custom cetak"type="button">Cetak</button>
           <button class="btn btn-custom kirim" type="button">Kirim</button>
         </div>
       </div>
