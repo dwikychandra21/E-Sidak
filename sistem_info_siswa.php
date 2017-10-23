@@ -53,10 +53,18 @@
             <label for="cari">Kelas</label>
             <select class="form-control select-custom" id="cari">
               <option>Pilih...</option>
-              <option>Atribut</option>
-              <option>Pakaian</option>
-              <option>Pakaian</option>
-              <option>Pakaian</option>
+              <option value="">Teknik Gambar Bangunan</option>
+              <option value="">Teknik Konstruksi Batu Beton</option>
+              <option value="">Teknik Konstruksi Kayu</option>
+              <option value="">Teknik Elektronika Komunikasi</option>
+              <option value="">Teknik Instalasi Pemanfaatan Tenaga Listrik</option>
+              <option value="">Teknik Pendingin dan Tata Udara</option>
+              <option value="">Teknik Pemesinan</option>
+              <option value="">Teknik Kendaraan Ringan</option>
+              <option value="">Teknik Kendaraan Ringan</option>
+              <option value="">Rekayasa Perangkat Lunak</option>
+              <option value="">Teknik Komputer Jaringan</option>
+              <option value="">Multimedia</option>
             </select>
           </div>
         </div>
@@ -97,7 +105,7 @@
                 <td>24938</td>
                 <td>Dwiky Chandra Hidayat</td>
                 <td>100</td>
-                <td id="checkbox"><input type="checkbox" value=""></td>
+                <td id="checkbox-info"><a href="edit_siswa.php"><i class="fa fa-edit"></i></a></td>
               </tr>
 
               <tr>
@@ -105,7 +113,7 @@
                 <td>24938</td>
                 <td>Dwiky Chandra Hidayat</td>
                 <td>80</td>
-                <td id="checkbox"><input type="checkbox" value=""></td>
+                <td id="checkbox-info"><a href=""><i class="fa fa-edit"></i></a></td>
               </tr>
 
               <tr>
@@ -113,7 +121,7 @@
                 <td>24938</td>
                 <td>Dwiky Chandra Hidayat</td>
                 <td>80</td>
-                <td id="checkbox"><input type="checkbox" value=""></td>
+                <td id="checkbox-info"><a href=""><i class="fa fa-edit"></i></a></td>
               </tr>
 
               <tr>
@@ -121,7 +129,7 @@
                 <td>24938</td>
                 <td>Dwiky Chandra Hidayat</td>
                 <td>80</td>
-                <td id="checkbox"><input type="checkbox" value=""></td>
+                <td id="checkbox-info"><a href=""><i class="fa fa-edit"></i></a></td>
               </tr>
 
               <tr>
@@ -129,7 +137,7 @@
                 <td>24938</td>
                 <td>Dwiky Chandra Hidayat</td>
                 <td>80</td>
-                <td id="checkbox"><input type="checkbox" value=""></td>
+                <td id="checkbox-info"><a href=""><i class="fa fa-edit"></i></a></td>
               </tr>
 
               <tr>
@@ -137,7 +145,7 @@
                 <td>24938</td>
                 <td>Dwiky Chandra Hidayat</td>
                 <td>80</td>
-                <td id="checkbox"><input type="checkbox" value=""></td>
+                <td id="checkbox-info"><a href=""><i class="fa fa-edit"></i></a></i></td>
               </tr>
 
               <tr>
@@ -145,7 +153,7 @@
                 <td>24938</td>
                 <td>Dwiky Chandra Hidayat</td>
                 <td>80</td>
-                <td id="checkbox"><input type="checkbox" value=""></td>
+                <td id="checkbox-info"><a href=""><i class="fa fa-edit"></i></a></td>
               </tr>
 
               <tr>
@@ -153,15 +161,15 @@
                 <td>24938</td>
                 <td>Dwiky Chandra Hidayat</td>
                 <td>80</td>
-                <td id="checkbox"><input type="checkbox" value=""></td>
+                <td id="checkbox-info"><a href=""><i class="fa fa-edit"></i></a></td>
               </tr>
 
               <tr id="blacklist">
                 <td>9</td>
                 <td>24938</td>
                 <td>Dwiky Chandra Hidayat</td>
-                <td>80</td>
-                <td id="checkbox"><input type="checkbox" value=""></td>
+                <td>10</td>
+                <td id="checkbox-info"><a href=""><i class="fa fa-edit"></i></a></td>
               </tr>
 
               <tr>
@@ -169,17 +177,19 @@
                 <td>24938</td>
                 <td>Dwiky Chandra Hidayat</td>
                 <td>80</td>
-                <td id="checkbox"><input type="checkbox" value=""></td>
+                <td id="checkbox-info"><a href=""><i class="fa fa-edit"></i></a></td>
 
               </tr>
             </tbody>
           </table>
-          <button class="btn btn-custom cetak"type="button">Cetak</button>
-          <button class="btn btn-custom kirim" type="button">Kirim</button>
         </div>
       </div>
       </div>
     </div>
+
+    <footer>
+      <p>Copyright &copy; 2017 E-Sidak</p>
+    </footer>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -80,14 +80,22 @@
       <div class="box">
         <div class="row">
         <div class="col-md-12 col-sm-12 table-siswa">
-          <label><h3>Rekayasa Perangkat Lunak</h3></label>
+          <label><h3>Rekayasa Perangkat Lunak</h3><a href="#">Pilih Kelas lain</a></label>
           <table class="table table-striped ">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>NIS</th>
+                <th>Nama</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
             <tbody>
               <tr>
                 <td>1</td>
                 <td>24938</td>
                 <td>Dwiky Chandra Hidayat</td>
-                <td id="checkbox">
+                <td id="checkbox-sidak">
                   <div class="checkbox">
                     <label>
                       <input type="checkbox" value="">
@@ -101,7 +109,7 @@
                 <td>2</td>
                 <td>24938</td>
                 <td>Dwiky Chandra Hidayat</td>
-                <td id="checkbox">
+                <td id="checkbox-sidak">
                   <div class="checkbox">
                     <label>
                       <input type="checkbox" value="">
@@ -115,7 +123,7 @@
                 <td>3</td>
                 <td>24938</td>
                 <td>Dwiky Chandra Hidayat</td>
-                <td id="checkbox">
+                <td id="checkbox-sidak">
                   <div class="checkbox">
                     <label>
                       <input type="checkbox" value="">
@@ -129,7 +137,7 @@
                 <td>4</td>
                 <td>24938</td>
                 <td>Dwiky Chandra Hidayat</td>
-                <td id="checkbox">
+                <td id="checkbox-sidak">
                   <div class="checkbox">
                     <label>
                       <input type="checkbox" value="">
@@ -143,7 +151,7 @@
                 <td>5</td>
                 <td>24938</td>
                 <td>Dwiky Chandra Hidayat</td>
-                <td id="checkbox">
+                <td id="checkbox-sidak">
                   <div class="checkbox">
                     <label>
                       <input type="checkbox" value="">
@@ -157,7 +165,7 @@
                 <td>6</td>
                 <td>24938</td>
                 <td>Dwiky Chandra Hidayat</td>
-                <td id="checkbox">
+                <td id="checkbox-sidak">
                   <div class="checkbox">
                     <label>
                       <input type="checkbox" value="">
@@ -171,7 +179,7 @@
                 <td>7</td>
                 <td>24938</td>
                 <td>Dwiky Chandra Hidayat</td>
-                <td id="checkbox">
+                <td id="checkbox-sidak">
                   <div class="checkbox">
                     <label>
                       <input type="checkbox" value="">
@@ -185,7 +193,7 @@
                 <td>8</td>
                 <td>24938</td>
                 <td>Dwiky Chandra Hidayat</td>
-                <td id="checkbox">
+                <td id="checkbox-sidak">
                   <div class="checkbox">
                     <label>
                       <input type="checkbox" value="">
@@ -199,7 +207,7 @@
                 <td>9</td>
                 <td>24938</td>
                 <td>Dwiky Chandra Hidayat</td>
-                <td id="checkbox">
+                <td id="checkbox-sidak">
                   <div class="checkbox">
                     <label>
                       <input type="checkbox" value="">
@@ -213,7 +221,7 @@
                 <td>10</td>
                 <td>24938</td>
                 <td>Dwiky Chandra Hidayat</td>
-                <td id="checkbox">
+                <td id="checkbox-sidak">
                   <div class="checkbox">
                     <label>
                       <input type="checkbox" value="">
@@ -229,6 +237,10 @@
       </div>
       </div>
     </div>
+
+    <footer>
+      <p>Copyright &copy; 2017 E-Sidak</p>
+    </footer>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
   </body>
 </html>

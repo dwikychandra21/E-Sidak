@@ -40,58 +40,73 @@
 
     <div class="container-fluid">
         <div class="jumbotron-list">
-          <h2 class="text-center">BLACKLIST</h2>
+          <h2 class="text-center">EDIT SISWA</h2>
       </div>
     </div>
 
 
     <div class="container-fluid">
           <div class="col-md-12">
-            <div class="container-panel">
+
+            <div class="container-panel-detail form-content">
+
               <table class="table table-custom">
+              <form action="edit_proses.php" method="post">
+
+
               <tbody>
                 <tr>
-                  <td><h2>Hendra Setiawan</h2></td>
+                  <th>NIS</th>
+                  <td>: &nbsp;&nbsp;&nbsp;24932</td>
                 </tr>
+
                 <tr>
-                <td><h4>29932 &nbsp;•&nbsp; 10 Poin</h4></td>
+                  <th>Nama</th>
+                  <td>: <input type="text" name="nama" class="form-control form-control-custom" value="Hendra Setiawan"></td>
                 </tr>
+
+                <tr>
+                  <th>Poin</th>
+                  <td>: <input type="text" name="nama" class="form-control form-control-custom" value="70"></td>
+                </tr>
+
+                <tr>
+                  <td><hr></td>
+                </tr>
+
+                <tr>
+                  <th>Nama Orang Tua</th>
+                  <td>: <input type="text" name="nama" class="form-control form-control-custom" value="John Doe"></td>
+                </tr>
+
+                <tr>
+                  <th>No.Hp</th>
+                  <td>: <input type="text" name="nama" class="form-control form-control-custom" value="0857-3757-3551"></td>
+                </tr>
+
+                <tr>
+                  <th>Alamat</th>
+                  <td>: <input type="text" name="nama" class="form-control form-control-custom" value="Jl.Raya Sading"></td>
+                </tr>
+
               </tbody>
+              </form>
               </table>
             </div>
-
-            <div class="container-panel">
-              <table class="table table-custom">
-              <tbody>
-                <tr>
-                  <td><h2>I Ketut Budi Astawa</h2></td>
-                </tr>
-                <tr>
-                <td><h4>29932 &nbsp;•&nbsp; 10 Poin</h4></td>
-                </tr>
-              </tbody>
-              </table>
-            </div>
-
-          <div class="container-panel">
-            <table class="table table-custom">
-            <tbody>
-              <tr>
-                <td><h2>Dwiky Chandra Hidayat</h2></td>
-              </tr>
-              <tr>
-              <td><h4>29932 &nbsp;•&nbsp; 10 Poin</h4></td>
-              </tr>
-            </tbody>
-            </table>
-          </div>
       </div>
+    </div>
+    <div class="container-fluid container-button-update">
+
+        <div class="col-md-12 ">
+          <button class="btn btn-cetak" type="button"><i class="fa fa-print"></i> Cetak Laporan</button>
+          <button class="btn btn-update" type="button">Update</button>
+        </div>
+
     </div>
 
     <footer>
       <p>Copyright &copy; 2017 E-Sidak</p>
     </footer>
-
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -123,6 +123,10 @@
       </div>
       </div>
     </div>
+
+    <footer>
+      <p>Copyright &copy; 2017 E-Sidak</p>
+    </footer>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
   </body>
 </html>

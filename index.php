@@ -24,7 +24,7 @@
     </div>
 
     <div class="container-fluid">
-      <div class="col-md-12">
+      <div class="col-md-12 col-sm-12 col-xs-12">
         <div class="form-content">
 	         <div class="label">
 		           <h3>Sign In</h3>
@@ -33,7 +33,7 @@
 
               <div class="form-group">
                 <label>Username</label>
-                <input type="text" class="form-control" name="username"><i class="fa fa-user"></i>
+                <input type="text" class="form-control" name="username" autofocus><i class="fa fa-user"></i>
               </div>
               <div class="form-group">
                 <label>Password</label>

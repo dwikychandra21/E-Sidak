@@ -40,31 +40,45 @@
 
     <div class="container-fluid">
         <div class="jumbotron-list">
-          <h2 class="text-center">Kelas XII</h2>
+          <h2 class="text-center">DETAIL RIWAYAT</h2>
       </div>
     </div>
 
+
     <div class="container-fluid">
-      <div class="box">
-        <div class="row">
-        <div class="col-md-12 col-sm-12">
-          <label for=""><h3>Paket Keahlian :</h3></label>
-          <ul class="list-group list-jurusan text-center">
-            <li class="list-group-item"><a href="#a">Teknik Gambar Bangunan</a></li>
-            <li class="list-group-item"><a href="#b">Teknik Konstruksi Batu Beton</a></li>
-            <li class="list-group-item"><a href="#c">Teknik Konstruksi Kayu</a></li>
-            <li class="list-group-item"><a href="#d">Teknik Elektronika Komunikasi</a></li>
-            <li class="list-group-item"><a href="#e">Teknik Instalasi Pemanfaatan Tenaga Listrik</a></li>
-            <li class="list-group-item"><a href="#f">Teknik Pendingin dan Tata Udara</a></li>
-            <li class="list-group-item"><a href="#g">Teknik Pemesinan</a></li>
-            <li class="list-group-item"><a href="#h">Teknik Sepeda Motor</a></li>
-            <li class="list-group-item"><a href="#i">Teknik Kendaraan Ringan</a></li>
-            <li class="list-group-item">Teknik Komputer dan Jaringan <a href="#">1</a> <a href="#">2</a></li>
-            <li class="list-group-item"><a href="form_sidak.php">Rekayasa Perangkat Lunak</a> <a href="#">1</a> <a href="#">2</a> </li>
-            <li class="list-group-item"><a href="#l">Multimedia</a></li>
-          </ul>
-        </div>
-      </div>
+          <div class="col-md-12">
+
+            <div class="container-panel-detail">
+
+              <table class="table table-custom">
+              <tbody>
+                <tr>
+                  <th>NIS</th>
+                  <td>: 24932</td>
+                </tr>
+
+                <tr>
+                  <th>Nama</th>
+                  <td>: Hendra Setiawan</td>
+                </tr>
+
+                <tr>
+                  <th>Jenis Sidak</th>
+                  <td>: Rambut</td>
+                </tr>
+
+                <tr>
+                  <th>Tanggal</th>
+                  <td>: 17 Agustus 2017</td>
+                </tr>
+
+                <tr>
+                  <th>Penyidak</th>
+                  <td>: Guru BK</td>
+                </tr>
+              </tbody>
+              </table>
+            </div>
       </div>
     </div>
 
