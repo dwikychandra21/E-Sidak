@@ -24,7 +24,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.php"><img src="img/esidak2.png" alt=""></a>
+        <a class="navbar-brand" href="#"><img src="img/esidak2.png" alt=""></a>
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-left">
@@ -33,7 +33,7 @@
           <li><a href="#b">Blacklist</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#u">Hy, Budi</a></li>
+          <li><a href="#u"></i>Hy, Budi</a></li>
           <li><a href="#k">Logout &nbsp;<i class="fa fa-sign-out"></i></a></li>
         </ul>
       </div>
@@ -56,7 +56,7 @@
     </div>
 
 
-    
+
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
   </body>
 </html>

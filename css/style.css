@@ -1,23 +1,70 @@
-html, body {
-  font-family: century gothic;
+@font-face {
+  font-family: century_gothic;
+  src: url(../fonts/GOTHIC.TTF);
 }
+html,body {
+    font-family: century_gothic;
+    overflow: hidden;
+}
+/* Let's get this party started */
+/*::-webkit-scrollbar {
+    width: 8px;
+}*/
+
+/* Track */
+/*::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius:5px;
+}*/
+
+/* Handle */
+/*::-webkit-scrollbar-thumb {
+  border-radius:5px;
+  background: #d8d8d8;
+}*/
+
 .container-fluid {
   margin: 0;
   padding: 0
 }
-div#loading {
-    background: #fff;
-    position: absolute;
-    z-index: 10;
-    width: 100%;
-    height: 100vh;
+body {
+  overflow: hidden;
 }
 
-#loading img {display: bloc\k;margin: 150px auto;}
+
+/* Preloader */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  /* change if the mask should have another color then white */
+  z-index: 99;
+  /* makes sure it stays on top */
+}
+
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  /* centers the loading animation horizontally one the screen */
+  top: 50%;
+  /* centers the loading animation vertically one the screen */
+  background-image: url(../img/esidak.gif);
+  /* path to your loading animation */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
+  /* is width and height divided by two */
+}
 
 .header-form {
     background: linear-gradient(to top right, orange, yellow);
-    min-height: 340px;
+    height: 340px;
 }
 .header-form::after {
   content:'';
@@ -72,13 +119,13 @@ div#loading {
 .form-content .form-group i.fa-user {
     position: absolute;
     top: 95px;
-    right: 45px;
+    right: 40px;
 }
 
 .form-content .form-group i.fa-eye {
     position: absolute;
     bottom: 70px;
-    right: 45px;
+    right: 40px;
 }
 .form-content .form-group {
   margin-bottom: 20px;
@@ -109,14 +156,14 @@ div#loading {
 
 /*-----------Halaman Sidak---------------*/
 .navbar-custom {
-    background: yellow;
+    background: linear-gradient(50deg , #000 70%,#1d1d1d 0,  #1d1d1d 85%, #333333 20%);
     border-radius: 0;
     border-color: transparent;
     margin-bottom: 0;
 }
 
 .navbar-custom .navbar-nav li a {
-  color: #000;
+  color: #fff;
   border-radius: 4px;
   margin: 10px 15px;
   padding: 5px 15px;
@@ -150,7 +197,7 @@ div#loading {
 .navbar-brand::after {
  content:'';
  position:relative;
- top: -1px;
+ top: -1.4px;
  border-style:solid;
  border-width: 26px 40px 0;
  border-color: #fff transparent;
@@ -174,20 +221,28 @@ div#loading {
 .box {
   margin: 0 150px;
 }
+select#pilih:hover {
+  cursor: pointer;
+}
+
 .frame-cari {
-  margin-top: 45px;
+  margin:50px;
+}
+.col-md-4,
+.col-md-8 {
+  padding: 0;
 }
 .frame-cari2 {
-  margin-top: 30px;
   margin-bottom: 30px;
 }
 .form-group label {
-  margin-right: 15px;
+  margin-right: 10px;
 }
-.select-custom {
-  width: 80%;
+.select-custom-cari {
+  width: 79%;
   display: inline-block;
 }
+
 .btn-warning {
   background: #000;
   border-color: #000;
@@ -195,9 +250,9 @@ div#loading {
 
 .container-fluid .jumbotron-home {
   border-radius: 0;
-  margin: 25px 0 30px;
+  margin-bottom: 30px;
   padding: 50px 15px;
-  background-color: yellow;
+  background: linear-gradient(to top right, #FFEB3B,yellow);
 }
 
 
@@ -208,7 +263,7 @@ div#loading {
   position: relative;
   background: linear-gradient(to top right, #ffc700, yellow);
   width: 80%;
-  height: 240px;
+  height: 35vh;
   box-shadow: 0 0 0 10px #fff, 0 0 15px 5px #000;
   margin: 0 auto;
   transition: .2s ease-out;
@@ -227,31 +282,146 @@ div#loading {
 }
 /*--------------List Jurusan---------------------*/
 .jumbotron-list {
-  background: yellow;
+  background: linear-gradient(to top right, #FFEB3B,yellow);
   margin-bottom: 50px;
   padding: 50px 15px;
+  margin: 0 10px 30px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0px 0px 15px 1px #ccc;
 }
 .list-jurusan {
   font-weight: bold;
 }
-.list-jurusan .list-group-item a {
+.list-jurusan .list-group-item a,
+.modal-body li a {
   text-decoration: none;
   color: #000;
   padding: 5px 10px;
 }
 .list-jurusan .list-group-item a:hover {
-  background: yellow;
+  background: #000;
+  color: #fff;
   border-radius: 5px;
   cursor: pointer;
 }
-/*--------------List Nama Siswa---------------------*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: .4s;
+  animation-name: fadeIn;
+  animation-duration: .4s;
+}
+.modal-content {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  margin: 0 auto;
+  width: 90%;
+  border-radius: 5px 5px 0 0;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: .4s;
+  animation-name: animatetop;
+  animation-duration: .4s;
+}
+.modal-header {
+  padding: 2px 16px;
+  background: linear-gradient(to top right, #ffe500,yellow);
+  color: #000;
+  border-radius: 5px 5px 0 0;
+}
+.modal-header p {
+  font-size: 25px;
+  padding-top: 10px;
+}
+.modal-body {
+  padding: 2px 16px;
+}
+
+.modal-body li a:hover {
+  background: yellow;
+  border-radius: 5px;
+}
+.close {
+  color: #000;
+  float: right;
+  padding-top: 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@-webkit-keyframes animatetop {
+  from {bottom: -300px; opacity: 0;}
+  to {bottom:  0; opacity: 1;}
+}
+@keyframes animatetop {
+  from {bottom: -300px; opacity: 0;}
+  to {bottom:  0; opacity: 1;}
+}
+
+/*--------------Form sidak---------------------*/
+.select-custom-sidak {
+  width: 70%;
+  display: inline-block;
+}
 .table-siswa {
   padding: 0;
   margin-bottom: 50px;
 }
-.table-siswa tr#blacklist {
-  border-left: 4px solid red;
+.table-siswa label:nth-of-type(2) {
+  margin-left: 10px;
 }
+.table-siswa label:nth-of-type(2) a {
+  background: transparent;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #000;
+  border: 1px solid #000;
+  text-decoration: none;
+  transition: .2s ease;
+}
+.table-siswa label:nth-of-type(2) a:hover {
+  background: #000;
+  color: #fff;
+}
+.table-siswa label:nth-of-type(2) a:focus {
+  background: #FFC107;
+  color: #fff;
+}
+.jumbotron-list select {
+    background: linear-gradient(to top right, #fff127,#fff912);
+    border: 0;
+    border-bottom:  2px solid #000;
+}
+.jumbotron-list select:hover {
+  cursor: pointer;
+}
+
 .table-siswa #checkbox-sidak,
 .table-siswa #checkbox-info {
   text-align: right;
@@ -319,6 +489,9 @@ padding: 100px 0;
   box-shadow: 0 0 0 10px #fff, 0 0 25px 5px #000;
 }
 /*----------Custom Checkbox-------------*/
+.checkbox label {
+  padding: 0;
+}
 .checkbox label::after {
   content: "";
   display: table;
@@ -345,6 +518,7 @@ padding: 100px 0;
 
 .checkbox label input[type="checkbox"] {
     display: none;
+    margin-left: 2px;
 }
 
 .checkbox label input[type="checkbox"] + .cr .cr-icon {
@@ -376,7 +550,18 @@ thead tr th:last-child {
 .table-siswa #checkbox-info i:hover {
   color: orange;
 }
+.table-siswa tr#blacklist {
+  border-left: 4px solid red;
+}
 /*-------------Riwayat & Blacklist--------------*/
+body#rb {
+  position: relative;
+  min-height: 1024px;
+}
+.select-custom-riwayat {
+  width: 70%;
+  display: inline-block;
+}
 .table-custom {
     margin: auto;
 }
@@ -418,7 +603,11 @@ thead tr th:last-child {
   font-size: 13px;
   color: #6b6b6b;
 }
-
+footer#rb {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 
 /*-------------EDIT SISWA---------------*/
 .form-control-custom {
@@ -459,30 +648,144 @@ thead tr th:last-child {
 
 /*---------Footer------------*/
 footer {
-    background: yellow;
+    background: linear-gradient(to top right, #FFEB3B,yellow);
     padding: 20px;
     margin-top: 80px;
     text-align: center;
+    /*border-bottom: 10px solid #000;*/
 }
 
 footer p {
     margin: 0;
 }
 
-
-@media screen and (max-width:768px) {
+/*@media screen and (min-width:335px) and (min-height:640px) {
+  footer#detail-r {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}*/
+@media screen and (max-width:1023px) and (min-width:768px) {
   .form-content form {
       width: 60%;
   }
+  /*---Halaman Sidak---*/
+  .frame-pilih-kelas .list-kelas h3 {
+    position: absolute;
+    left: -7px;
+    bottom: -29px;
+    font-size: 150px;
+    color: #fff;
+  }
+  .box {
+    margin: 0 50px;
+  }
+  .frame-cari2 {
+    width: 70%;
+    margin: 0 auto 30px;
+  }
+  .select-custom-riwayat {
+    width: 100%;
+  }
+  .frame-pilih-kelas .list-kelas {
+    position: relative;
+    background: linear-gradient(to top right, #ffc700, yellow);
+    width: 80%;
+    height: 30vh;
+    box-shadow: 0 0 0 10px #fff, 0 0 15px 5px #000;
+    margin: 0 auto;
+    transition: .2s ease-out;
+  }
+}
+@media screen and (max-width:767px) {
+  .form-content form {
+    width: 60%;
+  }
+  .box {
+    margin: 0 50px;
+  }
+  /*---halaman sidak---*/
+  .frame-pilih-kelas .list-kelas {
+    width: 50%;
+    margin: 0 auto 40px;
+  }
+  .select-custom-cari,
+  .select-custom-sidak,
+  .select-custom-riwayat {
+    width: 100%;
+  }
+  /*---nav menu---*/
+  .navbar-default .navbar-collapse {
+    position: static;
+    z-index: -1;
+  }
+
+  .navbar-default .navbar-toggle {
+    border-color: yellow;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: yellow;
+  }
+  .navbar-default .navbar-toggle:hover,
+  .navbar-default .navbar-toggle:focus {
+    background-color: #292929;
+  }
+  .navbar-custom .navbar-left li:first-child a {
+    margin: 30px 15px 0;
+  }
+  /*---form sidak---*/
+  .table-siswa label:nth-of-type(2) {
+    margin-left: 10px;
+    display: block;
+    margin: 0 0 15px;
+  }
+  .frame-cari2 {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (max-width:425px) {
+  /*----login----*/
   .form-content form {
       width: 100%;
   }
-  .form-content {
-    height: 400px;
-  }
+  .header-form::after {
+    content: '';
+    position: relative;
+    top: -1px;
+}
+  /*---Edit Siswa---*/
   .table-custom tr hr {
       width: 100%;
+  }
+  /*---form sidak---*/
+  .table-siswa h3 {
+  }
+  /*---halaman sidak---*/
+  .frame-pilih-kelas .list-kelas {
+    width: 70%;
+    margin: 0 auto 40px;
+  }
+  /*---list jurusan---*/
+  .modal-header p {
+    font-size: 20px;
+  }
+  .modal-body li a {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width:320px) {
+  /*---form sidak---*/
+  .table-siswa h3 {
+    font-size: 18px;
+  }
+  /*---halaman sidak---*/
+  .frame-pilih-kelas .list-kelas {
+    width: 100%;
+    margin: 0 auto 40px;
+  }
+  /*---list jurusan---*/
+  .modal-header p {
+    font-size: 17px;
   }
 }

@@ -23,7 +23,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.php"><img src="img/esidak2.png" alt=""></a>
+        <a class="navbar-brand" href="#"><img src="img/esidak2.png" alt=""></a>
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-left">
@@ -40,7 +40,13 @@
 
     <div class="container-fluid">
         <div class="jumbotron-list">
-          <h2 class="text-center">Kelas XII</h2>
+          <h2 class="text-center">
+            <select class="" name="">
+              <option value="">Kelas X</option>
+              <option value="">Kelas XI</option>
+              <option value="" selected >Kelas XII</option>
+            </select>
+          </h2>
       </div>
     </div>
 
@@ -48,10 +54,10 @@
     <div class="container-fluid">
       <div class="box frame-cari2">
         <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-4">
           <div class="form-group">
             <label for="cari">Sidak</label>
-            <select class="form-control select-custom" id="cari">
+            <select class="form-control select-custom-sidak" id="pilih">
               <option>Rambut</option>
               <option>Atribut</option>
               <option>Pakaian</option>
@@ -61,7 +67,7 @@
           </div>
         </div>
 
-        <div class="col-md-8">
+        <div class="col-md-8 col-sm-8">
           <div class="input-group">
             <input type="text" class="form-control" name="cari" placeholder="Cari Nama...">
             <span class="input-group-btn">
@@ -80,7 +86,9 @@
       <div class="box">
         <div class="row">
         <div class="col-md-12 col-sm-12 table-siswa">
-          <label><h3>Rekayasa Perangkat Lunak</h3><a href="#">Pilih Kelas lain</a></label>
+          <label><h3>Rekayasa Perangkat Lunak</h3></label>
+          <label><a href="list_kelas.php">Pilih Jurusan lain</a></label>
+
           <table class="table table-striped ">
             <thead>
               <tr>

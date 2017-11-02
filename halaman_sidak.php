@@ -15,7 +15,7 @@
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
   <script type="text/javascript">
-/*
+
   var minimumShowLoadingTimeReached = false;
   setTimeout(function() {minimumShowLoadingTimeReached = true;}, 3000);
 
@@ -34,13 +34,15 @@
       document.getElementById("content").style.display = "block";
   }
   window.onload = preloader;
-  */
+
   </script>
   </head>
   <body id="content">
-    <!--div id="loading">
-      <img src="img/esidak.gif" alt="">
-    </div-->
+    
+    <div id="preloader">
+      <div id="status">&nbsp;</div>
+    </div>
+
     <nav class="navbar navbar-default navbar-custom">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -48,7 +50,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.php"><img src="img/esidak2.png" alt=""></a>
+        <a class="navbar-brand" href="#"><img src="img/esidak2.png" alt=""></a>
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-left">
@@ -57,26 +59,26 @@
           <li><a href="#b">Blacklist</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#u">Hy, Budi</a></li>
+          <li><a href="#u"><i class="fa fa-user"></i>&nbsp; Hy,<b>Budi</b></a></li>
           <li><a href="#k">Logout &nbsp;<i class="fa fa-sign-out"></i></a></li>
         </ul>
       </div>
     </nav>
 
     <div class="container-fluid">
-      <div class="box frame-cari">
+      <div class="frame-cari">
         <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-4">
           <div class="form-group">
             <label for="cari">Cari</label>
-            <select class="form-control select-custom" id="cari">
+            <select class="form-control select-custom-cari" id="pilih">
               <option>NIS</option>
               <option>NAMA</option>
             </select>
           </div>
         </div>
 
-        <div class="col-md-8">
+        <div class="col-md-8 col-sm-8">
           <div class="input-group">
             <input type="text" class="form-control" name="cari">
             <span class="input-group-btn">
@@ -100,20 +102,20 @@
     <div class="container-fluid">
       <div class="box">
         <div class="row frame-pilih-kelas">
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-4 col-xs-12">
           <a href="list_kelas.php">
           <div class="list-kelas">
             <h3>X</h3>
           </div>
         </div>
         </a>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-4 col-xs-12">
           <a href="list_kelas.php">
           <div class="list-kelas">
             <h3>XI</h3>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-4 col-xs-12">
           <a href="list_kelas.php">
           <div class="list-kelas">
             <h3>XII</h3>

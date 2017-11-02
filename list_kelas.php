@@ -23,7 +23,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.php"><img src="img/esidak2.png" alt=""></a>
+        <a class="navbar-brand" href="#"><img src="img/esidak2.png" alt=""></a>
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-left">
@@ -59,10 +59,25 @@
             <li class="list-group-item"><a href="#g">Teknik Pemesinan</a></li>
             <li class="list-group-item"><a href="#h">Teknik Sepeda Motor</a></li>
             <li class="list-group-item"><a href="#i">Teknik Kendaraan Ringan</a></li>
-            <li class="list-group-item">Teknik Komputer dan Jaringan <a href="#">1</a> <a href="#">2</a></li>
-            <li class="list-group-item"><a href="form_sidak.php">Rekayasa Perangkat Lunak</a> <a href="#">1</a> <a href="#">2</a> </li>
+            <li class="list-group-item"><a href="#j">Teknik Komputer dan Jaringan</a></li>
+            <li class="list-group-item"><a id="openModal">Rekayasa Perangkat Lunak</a> </li>
             <li class="list-group-item"><a href="#l">Multimedia</a></li>
           </ul>
+
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <p><b>Rekayasa Perangkat Lunak</b></p>
+              </div>
+
+              <div class="modal-body">
+                <h4><li class="list-group-item text-center"><a href="form_sidak.php">Rekayasa Perangkat Lunak 1</a></li></h4>
+                <h4><li class="list-group-item text-center"><a href="form_sidak.php">Rekayasa Perangkat Lunak 2</a></li></h4>
+              </div>
+            </div><!-- modal-content -->
+          </div><!-- modal -->
+
         </div>
       </div>
       </div>

@@ -29,7 +29,7 @@
 	         <div class="label">
 		           <h3>Sign In</h3>
 		       </div>
-          <form action="proses_login.php" method="post">
+          <form action="home.php" method="post">
 
               <div class="form-group">
                 <label>Username</label>

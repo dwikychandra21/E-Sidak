@@ -15,7 +15,7 @@
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
   </head>
-  <body>
+  <body id="rb">
     <nav class="navbar navbar-default navbar-custom">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -23,7 +23,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.php"><img src="img/esidak2.png" alt=""></a>
+        <a class="navbar-brand" href="#"><img src="img/esidak2.png" alt=""></a>
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-left">
@@ -88,7 +88,7 @@
       </div>
     </div>
 
-    <footer>
+    <footer id="rb">
       <p>Copyright &copy; 2017 E-Sidak</p>
     </footer>
 
